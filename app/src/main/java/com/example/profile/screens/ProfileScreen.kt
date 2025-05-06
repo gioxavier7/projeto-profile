@@ -207,6 +207,34 @@ fun ProfileScreen(){
                     }
                 }
             }
+            Column() {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(20.dp)
+                    ) {
+                        Icon(
+                            Icons.Default.Email,
+                            contentDescription = "",
+                            tint = Color(0xFF5E4ED3)
+                        )
+                        Text(
+                            text = stringResource(R.string.email),
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 16.sp
+                        )
+                    }
+                }
+                Column {
+                    Text(
+                        text = "Oficial"
+                    )
+                }
+            }
         }
     }
 }
